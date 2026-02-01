@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "food_app"
+version = "0.1.0"
+dependencies = ["sqlalchemy>=2.0", "streamlit", "pydantic"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
